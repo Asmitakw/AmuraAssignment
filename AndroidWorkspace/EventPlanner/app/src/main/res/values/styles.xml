@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="textInputLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/edtxtHintColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorPrimary">@color/edtxtHintColor</item>
+        <item name="colorPrimaryDark">@color/edttxtColor</item>
+        <item name="colorAccent">@color/edttxtColor</item>
+
+        <item name="colorControlNormal">@color/edttxtColor</item>
+
+        <item name="colorControlActivated">@color/edttxtColor</item>
+    </style>
+
+    <!-- Dialog default theme. -->
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_photo_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/dialog_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chooseFilter"
+        android:textColor="@android:color/black"
+        android:gravity="start|center_vertical"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"/>
+
+    <View
+        android:id="@+id/dialog_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_textview"
+        android:background="@color/divider_color"/>
+
+    <ListView
+        android:id="@+id/listview_attach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/dialog_line_view"
+        android:listSelector="@color/grey_bg_color" />
+
+</RelativeLayout>

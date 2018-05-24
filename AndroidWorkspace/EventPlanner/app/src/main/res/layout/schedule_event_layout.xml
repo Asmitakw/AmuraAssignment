@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <include
+        layout="@layout/custom_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/edtxtMail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_edit_text_height"
+                android:background="@drawable/rounded_transparent_corner_rectangle"
+                android:ellipsize="end"
+                android:hint="@string/hint_email"
+                android:textColor="@color/edit_profile_text_color"
+                android:padding="15dp"
+                android:textSize="19sp"
+                android:textStyle="normal"
+                android:textColorHint="@color/edittext_hint_color"
+                android:textCursorDrawable="@null"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/selectDatetxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_edit_text_height"
+android:padding="10dp"
+                android:hint="@string/selectDate"
+
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/edittext_hint_color"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_transparent_corner_rectangle"/>
+
+            <TextView
+                android:id="@+id/selectTimetxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_edit_text_height"
+                android:padding="10dp"
+                android:hint="@string/selectTime"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/edittext_hint_color"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_transparent_corner_rectangle"/>
+
+            <EditText
+                android:id="@+id/edttxtAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_transparent_corner_rectangle"
+                android:hint="@string/addAgenda"
+                android:textColor="@color/edit_profile_text_color"
+               android:padding="15dp"
+                android:textSize="19sp"
+                android:textStyle="normal"
+                android:gravity="start"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/edittext_hint_color"
+                android:textCursorDrawable="@null"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/addEventBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add"
+                android:padding="10dp"
+                android:textSize="20sp"
+
+                android:background="@drawable/login_btn_selector"
+                android:textColor="@drawable/login_btn_text_color_selector"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
