@@ -425,7 +425,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         DatePickerDialog dialog = new DatePickerDialog(this, endDatePicker, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
 
         dialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
-        //dialog.getDatePicker().setMaxDate(System.currentTimeMillis());
         dialog.setTitle(getText(R.string.End_Date));
 
         dialog.show();
